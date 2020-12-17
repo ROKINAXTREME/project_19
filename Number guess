@@ -1,0 +1,15 @@
+import random as r
+import time as t
+a=True
+num=r.randint(1, 10)
+tim=r.randint(1,3)
+name=input("What is your name")
+print("Hello ",name,", I am thinking of a number between 1 to 10, can you guess it in 4 tries?")
+for i in range(0, 4):
+    guess=int(input("Take a guess!"))
+    t.sleep(tim)
+    if guess==num:
+        print("Correct!")
+        break
+    else:
+        print("Wrong, try again!")
